@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="341.0" prefWidth="507.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.luke_green_week7_lab.PrimaryController">
+   <children>
+      <Label>
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Label>
+      <Button fx:id="primaryButton" onAction="#switchToSecondary" text="Switch to Secondary View" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" text="Picture 1">
+               <HBox.margin>
+                  <Insets left="60.0" top="35.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToSecondary" text="Picture 2">
+               <HBox.margin>
+                  <Insets left="35.0" top="35.0" />
+               </HBox.margin>
+            </Button>
+            <Label>
+               <HBox.margin>
+                  <Insets left="60.0" top="40.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" text="Rotate">
+               <HBox.margin>
+                  <Insets left="70.0" top="35.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets bottom="-40.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
